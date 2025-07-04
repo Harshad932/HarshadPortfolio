@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Realms</title>
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body class="loading">
+    <!-- Animated Stars Background -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Parallax Elements -->
+    <div class="parallax-element parallax-circle" style="top: 20%; left: 10%;"></div>
+    <div class="parallax-element parallax-triangle" style="top: 60%; right: 15%;"></div>
+    <div class="parallax-element parallax-circle" style="bottom: 30%; left: 80%;"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">Harsh Realms</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="projects.html">Projects</a></li>
+                <li class="nav-item"><a href="skills.html">Skills</a></li>
+                <li class="nav-item active"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">About Me</h1>
+            <p class="hero-subtitle">Exploring the infinite possibilities of code and creativity</p>
+        </section>
+
+        <section class="honours-section">
+        <h2 class="section-title">Honours & Awards</h2>
+        <div class="honours-grid">
+            <!-- Award 1 -->
+            <div class="honour-card">
+                <div class="honour-slideshow" data-slideshow="award1">
+                    <div class="honour-slide active">
+                        <img src="./assets/icons/pvg2.jpg" alt="Hackathon Award Ceremony">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/pvg3.jpg" alt="Team Photo">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/pvg1.jpg" alt="Award Certificate">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('award1', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('award1', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('award1', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award1', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award1', 3)"></span>
+                    </div>
+                </div>
+                <div class="honour-content">
+                    <h3 class="honour-title">Participant – Innovarse Hackfest 2k25</h3>
+                    <p class="honour-event">PVG's COET, Pune</p>
+                    <p class="honour-date">24-Hour Hackathon</p>
+                    <p class="honour-description">
+                        Built an AI-based Legal Assistant tackling case overload in India's judiciary. Features included chatbot Q&A, case tracking, and AI-driven prioritization.
+                    </p>
+                    <div class="honour-achievement">
+                        💻 First hackathon experience – real-time coding, rapid pivots, and powerful team effort!
+                    </div>
+                    </div>
+
+            </div>
+
+            <div class="honour-card">
+                <div class="honour-slideshow" data-slideshow="award3">
+                    <div class="honour-slide active">
+                        <img src="./assets/icons/workshop5.jpg" alt="Tech Conference">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/workshop4.jpg" alt="Speaking Event">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/workshop2.jpg" alt="Speaking Event">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/workshop3.jpg" alt="Speaking Event">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/workshop6.jpg" alt="Speaking Event">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('award3', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('award3', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('award3', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award3', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award3', 3)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award3', 4)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award3', 5)"></span>
+                    </div>
+                </div>
+                <div class="honour-content">
+                    <h3 class="honour-title">Workshop Speaker</h3>
+                    <p class="honour-event">Backend Development Workshop, SIT Lonavala (ENTC Dept.)</p>
+                    <p class="honour-date">Organized by IETE</p>
+                    <p class="honour-description">
+                        Delivered an interactive workshop covering Express.js, PostgreSQL integration, authentication, middleware, and EJS templating. 
+                        Engaged students with live coding challenges and real-world backend project demos.
+                    </p>
+                    <div class="honour-achievement">
+                        🚀 A rewarding knowledge-sharing experience with active participation and insightful discussions.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Award 2 -->
+            <div class="honour-card">
+                <div class="honour-slideshow" data-slideshow="award2">
+                    <div class="honour-slide active">
+                        <img src="./assets/icons/1.jpg" alt="University Award">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/2.jpg" alt="Graduation Ceremony">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/3.jpg" alt="Graduation Ceremony">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('award2', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('award2', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('award2', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award2', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award2', 3)"></span>
+                    </div>
+                </div>
+                <div class="honour-content">
+                    <h3 class="honour-title">Top 10 Finalist – Project Presentation</h3>
+                    <p class="honour-event">DY Patil Institute, Varale</p>
+                    <p class="honour-date">Legal Assist – 2025</p>
+                    <p class="honour-description">
+                        Presented "Legal Assist", a project simplifying complex laws and guiding users through legal challenges. Selected among the Top 10 from 50+ teams.
+                    </p>
+                    <div class="honour-achievement">
+                        🚀 Showcased a powerful legal tech solution designed to simplify legal access and impress judges.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="honour-card">
+                <div class="honour-slideshow" data-slideshow="award4">
+                    <div class="honour-slide active">
+                        <img src="./assets/icons/convene2.jpeg" alt="University Award">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/convene1.jpeg" alt="Graduation Ceremony">
+                    </div>
+                    <div class="honour-slide">
+                        <img src="./assets/icons/convene3.jpeg" alt="Graduation Ceremony">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('award4', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('award4', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('award4', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award4', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('award4', 3)"></span>
+                    </div>
+                </div>
+                <div class="honour-content">
+                    <h3 class="honour-title">Top 20 Finalist</h3>
+                    <p class="honour-event">Convene 2025, SKNCOE, Vadgaon</p>
+                    <p class="honour-date">April 17, 2025</p>
+                    <p class="honour-description">
+                        Presented "Legal Assist" – an AI-powered legal tech platform featuring smart chat, case tracking, lawyer finder, and prioritization system. Proud moment reaching the Top 20 out of 150+ teams.
+                    </p>
+                    <div class="honour-achievement">
+                        🚀 Showcased innovation in law-tech at a national platform
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-timeline">
+            <!-- Experience 1 -->
+            <div class="experience-item">
+                <div class="experience-slideshow" data-slideshow="exp1">
+                    <div class="experience-slide active">
+                        <img src="./assets/icons/infinova1.jpeg" alt="Office Environment">
+                    </div>
+                    <div class="experience-slide">
+                        <img src="./assets/icons/infinova2.jpeg" alt="Team Meeting">
+                    </div>
+                    <div class="experience-slide">
+                        <img src="./assets/icons/infinova3.png" alt="Project Presentation">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('exp1', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('exp1', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('exp1', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('exp1', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('exp1', 3)"></span>
+                    </div>
+                </div>
+               <div class="experience-content">
+                    <h3 class="experience-role">Backend Web Development Intern</h3>
+                    <p class="experience-company">Infinova Eduventures</p>
+                    <p class="experience-duration">June 2025 – Present</p>
+                    <p class="experience-description">
+                        Transitioned from academic learning to real-world development by working on live production systems. Engaged in backend architecture, API development, deployment pipelines, and system optimization. Gained practical experience in professional development workflows, collaboration, and technical problem-solving in a fast-paced environment.
+                    </p>
+                    <div class="experience-technologies">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">API Development</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Backend Architecture</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="experience-item">
+                <div class="experience-slideshow" data-slideshow="exp2">
+                    <div class="experience-slide active">
+                        <img src="./assets/icons/passion1.png" alt="Startup Office">
+                    </div>
+                    <div class="experience-slide">
+                        <img src="./assets/icons/passion2.png" alt="Development Team">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('exp2', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('exp2', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('exp2', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('exp2', 2)"></span>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <h3 class="experience-role">Python Web Development Intern</h3>
+                    <p class="experience-company">Passion Software Solutions, Jalgaon</p>
+                    <p class="experience-duration">June 7, 2023 – July 22, 2023</p>
+                    <p class="experience-description">
+                        Completed industrial training focused on Python Web Development. Gained hands-on experience in backend development, project structuring, and understanding real-world software workflows. This internship sparked a deeper interest in building scalable software solutions.
+                    </p>
+                    <div class="experience-technologies">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Backend</span>
+                        <span class="tech-tag">Project Architecture</span>
+                    </div>
+                </div>
+
+            </div>
+
+        <!-- Journey Timeline -->
+        <section class="journey-section">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <h3 class="timeline-title">The Beginning</h3>
+                        <p class="timeline-description">
+                            Started my journey with C, HTML, and CSS. Fascinated by logic and structure, I built my first small projects and began exploring the fundamentals of web design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <h3 class="timeline-title">Growing Knowledge</h3>
+                        <p class="timeline-description">
+                            Learned C++ and Java, and explored core computer science subjects like DBMS. Continued developing small projects to strengthen problem-solving and backend understanding.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3 class="timeline-title">First Internship</h3>
+                        <p class="timeline-description">
+                            Got my first internship at Passion Software. Around the same time, I self-learned PHP and MySQL, which helped me understand server-side development and dynamic data handling.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Deep Dive into MERN</h3>
+                        <p class="timeline-description">
+                            Focused on modern web development with the MERN stack and learned PostgreSQL for scalable database design. Built complex projects and explored full-stack app architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">Pushing Boundaries</h3>
+                        <p class="timeline-description">
+                            Participated in my first hackathon, took a backend workshop, and started my second internship at Infinova. Sharpened system design and REST API skills while mentoring peers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Always</div>
+                        <h3 class="timeline-title">Project Consistency</h3>
+                        <p class="timeline-description">
+                            I’ve made sure to build and complete at least one meaningful project every year—each one pushing my skills further and reflecting my growth across technologies and concepts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills & Interests -->
+        <section class="skills-section">
+            <h2 class="section-title">Skills & Interests</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">🚀</span>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building responsive and scalable web apps using technologies like React, Node.js, Express, and PostgreSQL/MongoDB. Comfortable with both frontend and backend workflows.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly and clean interfaces with a focus on accessibility, minimalism, and modern design practices. I value both aesthetics and usability.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🧠</span>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Regularly solving DSA problems on platforms like LeetCode. Strengthening core concepts to improve logical thinking and prepare for coding interviews.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🏏</span>
+                    <h3>Cricket Enthusiast</h3>
+                    <p>Passionate about playing and watching cricket. I enjoy the strategy and team spirit involved, and follow major tournaments closely.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🎮</span>
+                    <h3>Gaming</h3>
+                    <p>Love immersing myself in PC and mobile games. Gaming keeps me sharp, improves reaction time, and is a great way to unwind.</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🧪</span>
+                    <h3>Tech Curiosity</h3>
+                    <p>Always exploring the latest gadgets and innovations. I love trying new tools, products, and staying updated with trends in the tech world.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="quote-container">
+                <p class="quote-text">
+                    Code is like poetry; it should be elegant, purposeful, and inspire others to create something beautiful.
+                </p>
+                <p class="quote-author">- My Personal Philosophy</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="mailto:mahajanharsh932@gmail.com" class="social-link">
+                <div class="link-content">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span class="link-name">Gmail</span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/harshad-mahajan932/" class="social-link" target="_blank">
+                <div class="link-content">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                    </svg>
+                    <span class="link-name">LinkedIn</span>
+                </div>
+            </a>
+            <a href="https://github.com/Harshad932" class="social-link" target="_blank">
+                <div class="link-content">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="link-name">GitHub</span>
+                </div>
+            </a>
+            <a href="https://x.com/MahajanHarsh932" class="social-link" target="_blank">
+                <div class="link-content">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                    <span class="link-name">Twitter</span>
+                </div>
+            </a>
+        </div>
+        <p class="footer-text">
+            © 2025 Harshad Mahajan. Crafted with ❤️ and lots of ☕ | All rights reserved
+        </p>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab" onclick="scrollToTop()" title="Back to top">
+        ↑
+    </button>
+
+    <script src="./js/about.js"></script>
+</body>
+</html>
