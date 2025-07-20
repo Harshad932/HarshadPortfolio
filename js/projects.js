@@ -81,6 +81,8 @@
             });
         }
 
+        console.log("Original design & code by Harshad Mahajan - 2025");
+
         // Header scroll effect
         function handleScroll() {
             const header = document.querySelector('.header');

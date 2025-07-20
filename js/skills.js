@@ -48,6 +48,8 @@
             skillBars.forEach(bar => observer.observe(bar));
         }
 
+        console.log("Original design & code by Harshad Mahajan - 2025");
+
         function initializeRadarChart() {
     const canvas = document.getElementById('skillRadar');
     if (!canvas) return;

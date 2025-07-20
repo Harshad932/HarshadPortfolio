@@ -42,6 +42,10 @@
             });
         }
 
+        
+        console.log("design & code by Harshad Mahajan - 2025");
+
+
         // Parallax effect for background elements
         function initParallax() {
             const parallaxElements = document.querySelectorAll('.parallax-element');

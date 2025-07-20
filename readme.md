@@ -9,18 +9,6 @@ Welcome to the **Portal Theme Portfolio**! This project showcases a modern and i
 - **Interactive Elements**: Hover effects and clickable elements for enhanced interactivity.
 - **Easy Customization**: Well-structured HTML and CSS for easy modifications.
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/portal-theme-portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd portal-theme-portfolio
-   ```
-3. Open `index.html` in your browser to view the template.
-
 ## Usage
 
 - Customize the content in `index.html` to showcase your own projects.
@@ -36,5 +24,8 @@ Contributions are welcome! If you have suggestions or improvements, please open 
 
 - Inspired by modern web design trends.
 - Built with love for the creative community.
+## License
+- Creator   : **Harshad Mahajan** - 2025
+- Contact   : [Email](mailto:mahajanharsh932@gmail.com)
 
 Happy coding!

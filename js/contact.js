@@ -45,6 +45,8 @@
            }, 3000);
        }
 
+       console.log("Original design & code by Harshad Mahajan - 2025");
+
        // Smooth scrolling for navigation links
        function smoothScroll(target) {
            const element = document.querySelector(target);
