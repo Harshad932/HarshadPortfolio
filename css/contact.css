@@ -32,6 +32,8 @@ body {
     animation: twinkle 3s infinite;
 }
 
+/* Design & Development: Harshad Mahajan | 2025 */
+
 @keyframes twinkle {
     0%, 100% { opacity: 0.3; transform: scale(1); }
     50% { opacity: 1; transform: scale(1.2); }
