@@ -26,7 +26,7 @@
                 <li class="nav-item"><a href="skills.html">Skills</a></li>
                 <li class="nav-item active"><a href="about.html">About</a></li>
                 <li class="nav-item"><a href="contact.html">Contact</a></li>
-                <li class="nav-item"><a href="https://drive.google.com/file/d/1jCk63p7_EmFZx3B4pxv011Zxp8dhBIbm/view?usp=sharing" target="_blank">Resume</a></li>
+                <li class="nav-item"><a href="https://drive.google.com/file/d/1O9d1veGgQ83xiYGfgLo2rYgZ7dqLcspC/view?usp=drive_link" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -192,7 +192,49 @@
     <section class="experience-section">
         <h2 class="section-title">Professional Experience</h2>
         <div class="experience-timeline">
+
             <!-- Experience 1 -->
+            <div class="experience-item">
+                <div class="experience-slideshow" data-slideshow="exp3">
+                    <div class="experience-slide active">
+                        <img src="./assets/icons/framedigital1.png" alt="Company Office">
+                    </div>
+                    <div class="experience-slide">
+                        <img src="./assets/icons/framedigital2.png" alt="Development Work">
+                    </div>
+                    <div class="experience-slide">
+                        <img src="./assets/icons/framedigital3.png" alt="Ecommerce Project">
+                    </div>
+                    <button class="slide-arrows slide-prev" onclick="changeSlide('exp3', -1)">‹</button>
+                    <button class="slide-arrows slide-next" onclick="changeSlide('exp3', 1)">›</button>
+                    <div class="slide-nav">
+                        <span class="slide-dot active" onclick="currentSlide('exp3', 1)"></span>
+                        <span class="slide-dot" onclick="currentSlide('exp3', 2)"></span>
+                        <span class="slide-dot" onclick="currentSlide('exp3', 3)"></span>
+                    </div>
+                </div>
+
+                <div class="experience-content">
+                    <h3 class="experience-role">Backend Developer Intern</h3>
+                    <p class="experience-company">FRAMEDIGITAL SOLUTION PVT. LTD.</p>
+                    <p class="experience-duration">September 2025 – December 2025</p>
+                    <p class="experience-description">
+                        Worked on a live e-commerce platform “Badshah Bangles,” contributing to end-to-end backend development and system integration. Designed and developed scalable RESTful APIs, implemented secure backend–frontend connectivity, and structured efficient database schemas. Played a key role in building core features such as product management, user handling, and order workflows. Gained strong experience in backend architecture, performance optimization, collaborative development using GitHub, and delivering production-ready features in a professional environment.
+                    </p>
+                    <div class="experience-technologies">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Schema Design</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">E-commerce Systems</span>
+                        <span class="tech-tag">Git & GitHub</span>
+                        <span class="tech-tag">Backend Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
             <div class="experience-item">
                 <div class="experience-slideshow" data-slideshow="exp1">
                     <div class="experience-slide active">
@@ -213,9 +255,9 @@
                     </div>
                 </div>
                <div class="experience-content">
-                    <h3 class="experience-role">Backend Web Development Intern</h3>
+                    <h3 class="experience-role">Full-Stack Development Intern</h3>
                     <p class="experience-company">Infinova Eduventures</p>
-                    <p class="experience-duration">June 2025 – Present</p>
+                    <p class="experience-duration">June 2025 – August 2025</p>
                     <p class="experience-description">
                         Transitioned from academic learning to real-world development by working on live production systems. Engaged in backend architecture, API development, deployment pipelines, and system optimization. Gained practical experience in professional development workflows, collaboration, and technical problem-solving in a fast-paced environment.
                     </p>
@@ -228,11 +270,9 @@
                         <span class="tech-tag">Backend Architecture</span>
                     </div>
                 </div>
-
-
             </div>
 
-            <!-- Experience 2 -->
+            <!-- Experience 3 -->
             <div class="experience-item">
                 <div class="experience-slideshow" data-slideshow="exp2">
                     <div class="experience-slide active">
@@ -262,7 +302,6 @@
                         <span class="tech-tag">Project Architecture</span>
                     </div>
                 </div>
-
             </div>
 
         <!-- Journey Timeline -->
@@ -428,7 +467,7 @@
                     <span class="link-name">Twitter</span>
                 </div>
             </a>
-            <a href="https://drive.google.com/file/d/1jCk63p7_EmFZx3B4pxv011Zxp8dhBIbm/view?usp=sharing" class="social-link" target="_blank">
+            <a href="https://drive.google.com/file/d/1O9d1veGgQ83xiYGfgLo2rYgZ7dqLcspC/view?usp=drive_link" class="social-link" target="_blank">
                 <div class="link-content">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
